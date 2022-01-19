@@ -1,0 +1,115 @@
+.service {
+  background-color: var(--primary-grey);
+}
+.service__heading {
+  margin-bottom: 2.24rem;
+  background-image: linear-gradient(
+    to right,
+    var(--primary),
+    var(--primary-dark)
+  );
+  color: #f7f7f7;
+  text-transform: uppercase;
+  letter-spacing: 0.54rem;
+  margin: 0.2rem 12.8rem 1.6rem 12.8rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0.3rem 0.2rem 0.3rem rgb(0 0 0 / 40%);
+  font-weight: 700;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.service__heading--secondary {
+  text-align: center;
+  font-weight: 650;
+  font-size: 1rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  line-height: 1.2rem;
+  margin: 1.8rem 2.4rem;
+}
+
+.service__box {
+  border-radius: 1rem;
+  width: 100%;
+  background-color: #191919;
+  color: #bebebe;
+  padding: 3rem;
+  transition: 0.3s ease-in;
+}
+.service__box:hover {
+  transform: translateY(-8px);
+  background-image: linear-gradient(
+    180deg,
+    var(--primary-light),
+    var(--primary),
+    var(--primary-dark)
+  );
+  box-shadow: 0.28rem 0.15rem 0.25rem rgb(0 0 0 / 40%);
+
+  opacity: 0.95;
+}
+.service__box:hover .icon {
+  color: #fff;
+}
+.service__box:hover p.service__text.p__color {
+  color: #fff;
+}
+
+.icon {
+  font-size: 54px;
+  font-weight: 400;
+  margin-bottom: 23px;
+  display: inline-flex;
+  color: var(--primary);
+}
+p.service__text.p__color {
+  margin-bottom: 0;
+}
+h1.service__text {
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0px;
+}
+
+.service__grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.service__flex__item {
+  margin: 1.2rem 0.4rem;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1400px) {
+  .service__grid__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .service__grid__container {
+    grid-template-columns: 1fr;
+  }
+  .service__box {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .service__heading {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .service__heading {
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+    font-size: 0.6rem;
+  }
+}
