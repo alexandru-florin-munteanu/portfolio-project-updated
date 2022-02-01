@@ -30,6 +30,7 @@ function Project() {
                 <a
                   href="https://alexandru-florin-munteanu.github.io/EUNU---Music-DJ-Website-Mockup/"
                   target={"_blank"}
+                  rel="noreferrer"
                   className="project__btn"
                 >
                   View live demo
@@ -52,6 +53,7 @@ function Project() {
                 <a
                   href="https://alexandru-florin-munteanu.github.io/bankist-app-js/"
                   target={"_blank"}
+                  rel="noreferrer"
                   className="project__btn"
                 >
                   View live demo
@@ -61,19 +63,20 @@ function Project() {
           </div>
 
           <div className="project__flex__item grid__item__3">
-            <div className="project__box pointer relative">
-              <div className="project__box__img pointer relative">
+            <div className="project__box">
+              <div className="project__box__img">
                 <div className="project__img__box">
                   <img src={Project4} alt="" className="project__img" />
                 </div>
                 <div className="mask__effect"></div>
               </div>
-              <div className="project__meta absolute">
+              <div className="project__meta">
                 <h5 className="project__text">Natours</h5>
                 <h4 className="project__text">Travel booking website</h4>
                 <a
                   href="https://alexandru-natours.netlify.app/#"
                   target={"_blank"}
+                  rel="noreferrer"
                   className="project__btn"
                 >
                   View live demo

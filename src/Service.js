@@ -3,7 +3,7 @@ import "./Service.css";
 
 function Service() {
   return (
-    <div className="service component__space" id="Tech">
+    <div className="service" id="Tech">
       <div className="heading">
         <h1 className="service__heading">Technologies I use</h1>
 
@@ -35,7 +35,7 @@ function Service() {
                 <h1 className="service__text">JavaScript</h1>
                 <p className="p service__text p__color">
                   Built my knowledge on the language from ground up following
-                  ES6+ concepts.
+                  ES6+ concepts. Studied both in OOP and Functional paradigms.
                 </p>
               </div>
             </div>
@@ -47,10 +47,10 @@ function Service() {
                 <svg
                   stroke="currentColor"
                   fill="none"
-                  stroke-width="2"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,10 +76,10 @@ function Service() {
                 <svg
                   stroke="currentColor"
                   fill="none"
-                  stroke-width="2"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"

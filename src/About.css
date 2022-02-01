@@ -1,6 +1,7 @@
 .about {
   background: hsl(0, 0%, 10%);
   height: 100vh;
+  padding: 6.4rem 0;
 }
 
 .about__wraper {
@@ -44,8 +45,7 @@ h1.about__heading {
 }
 .about__button__secondary-cta {
   background-color: rgba(240, 240, 240, 0.85);
-  box-shadow: 0.4rem 0.3rem 0.4rem rgb(0 0 0 / 40%);
-
+  box-shadow: 0.3rem 0.15rem 0.15rem rgb(0 0 0 / 45%);
   padding: 0.7rem 2.1rem;
   border-radius: 0.65rem;
   text-transform: uppercase;
@@ -53,14 +53,21 @@ h1.about__heading {
   font-weight: 600;
   letter-spacing: 0.12rem;
   border: none;
+  transition: all 0.2s cubic-bezier(0.75, 0.82, 0.165, 1);
 }
 
 .about__button__secondary-cta:hover,
 .about__button__secondary-cta:active {
   background-color: rgba(240, 240, 240, 0.55);
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(0 0 0 / 40%);
+  transform: translateY(-3px);
+  box-shadow: 0.45rem 0.3rem 0.35rem rgb(0 0 0 / 45%);
 }
-
+.about__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s cubic-bezier(0.75, 0.82, 0.165, 1);
+}
 .about__button__main-cta {
   background-color: rgba(113, 197, 98, 0.5);
   box-shadow: 0.4rem 0.2rem 0.4rem rgb(0 0 0 / 40%);
@@ -77,10 +84,14 @@ h1.about__heading {
 .about__button__main-cta:hover,
 .about__button__main-cta:active {
   background-color: rgba(113, 197, 98, 1);
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(0 0 0 / 40%);
+  transform: translateY(-3px);
+  box-shadow: 0.5rem 0.35rem 0.5rem rgb(0 0 0 / 40%);
   color: #f0f0f0;
 }
 
+.about__button__main-cta:active {
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(0 0 0 / 65%);
+}
 .about__button {
   padding: 20px 0px;
   justify-content: space-around;
@@ -126,9 +137,14 @@ a.bottom__to__top.active {
     margin-right: 0.2rem;
   }
 }
+@media only screen and (max-width: 1040px) {
+  h1.about__heading {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 940px) {
   .about {
-    height: 130vh;
+    height: 125vh;
   }
   img.about__img {
     height: 20rem;
@@ -166,12 +182,5 @@ a.bottom__to__top.active {
   .about__txt {
     width: 80%;
     margin-bottom: 0.8rem;
-  }
-}
-@media only screen and (max-width: 880px) {
-}
-@media only screen and (max-width: 600px) {
-  .about {
-    height: 145vh;
   }
 }
