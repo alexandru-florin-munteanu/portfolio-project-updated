@@ -26,6 +26,8 @@
 
 .logo__main {
   height: 2.2rem;
+  margin-top: 1.55rem;
+
   padding: 0 3.6rem;
   position: relative;
   transform: rotate(180deg);
@@ -103,6 +105,7 @@ h4.home__text {
 .navigation__navbar {
   list-style: none;
   padding: 0.8rem 2.4rem;
+  margin-top: 2.4rem;
 }
 .nav__item {
   margin: 0 0.8rem;
@@ -299,9 +302,11 @@ span {
 @media only screen and (max-width: 1050px) {
   .nav--mobile__link:link,
   .nav--mobile__link:visited {
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: 0.65rem;
-    margin: 1rem;
+    font-weight: 700;
+    width: 65%;
+    margin: 0.55rem auto;
   }
   .navigation__navbar {
     display: none;
@@ -311,6 +316,7 @@ span {
   }
   .logo__main {
     height: 2.2rem;
+    margin-top: 0;
   }
 }
 
@@ -344,6 +350,17 @@ span {
   .home__text:not(:last-child) {
     margin: 1.4rem 0;
   }
+
+  /* Navigation */
+
+  .nav--mobile__link:link,
+  .nav--mobile__link:visited {
+    font-size: 0.8rem;
+    letter-spacing: 0.65rem;
+    font-weight: 700;
+    width: 75%;
+    margin: 0.45rem auto;
+  }
 }
 
 @media only screen and (max-width: 590px) {
@@ -353,5 +370,27 @@ span {
   }
   span {
     font-size: 0.7rem;
+  }
+
+  .nav--mobile__link:link,
+  .nav--mobile__link:visited {
+    font-size: 0.6rem;
+    letter-spacing: 0.45rem;
+    font-weight: 700;
+    width: 95%;
+    margin: 0.45rem auto;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .nav--mobile__link:link,
+  .nav--mobile__link:visited {
+    font-size: 0.55rem;
+    letter-spacing: 0.35rem;
+    font-weight: 600;
+    width: 110%;
+    transform: translateX(-10%);
+
+    margin: 0.35rem auto;
   }
 }
