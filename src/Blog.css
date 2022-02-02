@@ -19,6 +19,7 @@
 
 .blog__item {
   margin: 1.2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .blog__heading--primary {
@@ -52,23 +53,64 @@
   line-height: 2.3rem;
 }
 h4.blog__text {
-  font-size: 0.8rem;
-  line-height: 1.8;
+  font-size: 0.6rem;
+  line-height: 1.2;
   box-shadow: 0.15rem 0.1rem 0.15rem rgb(0 0 0 / 35%);
-  padding: 0.2rem 0.4rem;
+  padding: 0.6rem 0.85rem;
   border-radius: 1.8rem;
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin: 1.4rem auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(141, 209, 129, 0.95) 15%,
+    rgba(141, 209, 129, 0.85) 45%,
+    rgba(141, 209, 129, 0.65) 65%,
+    rgba(141, 209, 129, 0.45) 80%,
+    rgba(141, 209, 129, 0.25) 95%,
+    transparent 100%
+  );
 
   color: #fafafa;
 }
 h5.blog__text {
-  font-size: 0.6rem;
-  line-height: 1.8;
+  font-size: 0.85rem;
+  line-height: 1.6;
   box-shadow: 0.15rem 0.1rem 0.15rem rgb(0 0 0 / 35%);
+  padding: 0.4rem 0.75rem;
+  border-radius: 1.6rem;
   width: 80%;
-  padding: 0.2rem 0.6rem;
-  border-radius: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin: 1.6rem auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(141, 209, 129, 0.95) 15%,
+    rgba(141, 209, 129, 0.85) 45%,
+    rgba(141, 209, 129, 0.65) 65%,
+    rgba(141, 209, 129, 0.45) 80%,
+    rgba(141, 209, 129, 0.25) 95%,
+    transparent 100%
+  );
 
   color: #fafafa;
+}
+
+h5.blog__text:hover,
+h4.blog__text:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(
+    to right,
+    rgba(141, 209, 129, 0.9) 15%,
+    rgba(141, 209, 129, 0.8) 45%,
+    rgba(141, 209, 129, 0.6) 65%,
+    rgba(141, 209, 129, 0.4) 80%,
+    rgba(141, 209, 129, 0.2) 95%,
+    transparent 100%
+  );
 }
 
 .Blog__meta {
@@ -88,6 +130,22 @@ h5.blog__text {
   transition: all 0.2s ease-out;
 
   height: 100%;
+}
+
+.blog.project__btn {
+  background-color: rgba(113, 197, 98, 0.5);
+  box-shadow: 0.4rem 0.2rem 0.4rem rgb(0 0 0 / 40%);
+  margin: 1.2rem auto 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.7rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.24rem;
+  border: 2px solid transparent;
+  transition: all 0.2s cubic-bezier(0.75, 0.82, 0.165, 1);
 }
 
 a.blog.project__btn {
