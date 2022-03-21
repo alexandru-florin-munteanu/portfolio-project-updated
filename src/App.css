@@ -3,9 +3,9 @@
 :root {
   --primary-white: #fff;
   --primary-grey: #bebebe;
-  --primary: #71c562;
+  --primary: #71c563;
   --primary-btn: #66b158;
-  --secondary-btn: #557d4d;
+  --secondary-btn: rgb(85, 125, 77);
   --primary-dark: #172714;
   --primary-light: rgb(141, 209, 129);
   --primary-light-2: #afdfa7;

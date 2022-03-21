@@ -13,22 +13,18 @@ function About() {
       <div className="about__container">
         <div className="about__wraper">
           <div className="about__img">
-            <img src={aboutImg} alt="my photo" className="about__img" />
+            <img src={aboutImg} alt="my photo" className="about__image" />
           </div>
           <div className="about__txt">
             <h1 className="about__heading">About Me</h1>
             <div className="about__meta">
               <p className="about__text">
-                I am a passionate and dedicated self-taught person, aspiring to
-                become a frontend developer / engineer. Currently undergoing
+                I am passionate, dedicated and self-taught, aspiring to build a
+                career as a software developer / engineer. Currently undergoing
                 assignments and tasks from a mid software-engineer at Code
-                Frequency.
+                Frequency as well as working on my own projects.
               </p>
-              <p className="about__text ">
-                Currently looking for an internship or beginner friendly role
-                within the industry, looking to join the right culture for a
-                mutual win. This is my portofolio.
-              </p>
+              <p className="about__text ">This is my portofolio.</p>
               <div className="about__button">
                 <a target={"_blank"} href="https://files.fm/f/wsx5ayw2e">
                   <button className="about__button__secondary-cta">
