@@ -17,6 +17,7 @@
   padding: 0 0 2.4rem 0;
   border-bottom: 2px solid #71c562;
   width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -57,4 +58,52 @@
   letter-spacing: 0.1rem;
   color: #71c562;
   opacity: 0.8;
+}
+@media screen and (max-width: 850px) {
+  .quote {
+    font-size: 1.8rem;
+  }
+  .author {
+    font-size: 1rem;
+  }
+
+  .footer__image {
+    height: 2.4rem;
+    width: 4.8rem;
+  }
+  .footer__copyright p {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .quote {
+    font-size: 1.6rem;
+  }
+  .author {
+    font-size: 0.8rem;
+  }
+  .footer__image {
+    height: 2rem;
+    width: 4rem;
+  }
+  .footer__copyright p {
+    font-size: 0.55rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .quote {
+    font-size: 1.4rem;
+  }
+  .author {
+    font-size: 0.6rem;
+  }
+  .footer__copyright p {
+    font-size: 0.5rem;
+  }
+
+  .footer__image {
+    height: 1.6rem;
+    width: 3.2rem;
+  }
 }

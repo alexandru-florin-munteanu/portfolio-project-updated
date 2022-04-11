@@ -78,7 +78,7 @@ function Contact() {
               <div className="icon-contact">
                 <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
               </div>
-              <p>+40 762 577 492</p>
+              <p>+40 762 577 392</p>
             </div>
           </div>
           <div className="social-media">

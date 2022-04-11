@@ -1,5 +1,5 @@
 .about {
-  background: hsl(0, 0%, 10%);
+  background: rgba(227, 227, 227, 255);
   height: 100vh;
   padding: 6.4rem 0;
 }
@@ -14,16 +14,28 @@
 .about__txt {
   width: 40%;
   letter-spacing: 0.15rem;
-  color: #fafafa;
+  color: #333;
+  font-weight: 600;
   font-family: "Montserrat", sans-serfi;
   line-height: 2rem;
   font-size: 18px;
 }
-img.about__img {
-  border-radius: 50%;
-  width: 35rem;
-  height: 35rem;
-  margin-right: 5rem;
+.about__img {
+  border-radius: 1.2rem;
+  width: 25rem;
+  height: 30rem;
+  overflow: hidden;
+  margin: 1.2rem 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__image {
+  display: block;
+  /* border-radius: 2.4rem; */
+  width: 26rem;
+  height: 31rem;
+  /* padding: 2.4rem 1.2rem; */
 }
 h1.about__heading {
   margin-bottom: 2.24rem;
@@ -32,7 +44,7 @@ h1.about__heading {
     var(--primary),
     var(--primary-dark)
   );
-  color: #f7f7f7;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 0.54rem;
   padding: 0.8rem;
